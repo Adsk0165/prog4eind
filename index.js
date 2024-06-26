@@ -3,6 +3,7 @@ const userRoutes = require('./src/routes/user.routes')
 const authRoutes = require('./src/routes/authentication.routes').routes
 const mealRoutes = require('./src/routes/meal.routes')
 const logger = require('./src/util/logger')
+require('dotenv').config();
 
 const app = express()
 

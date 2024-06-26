@@ -2,6 +2,7 @@ const userService = require('../services/user.service');
 const logger = require('../util/logger');
 const { validateToken, validateUserOwnership } = require('../middelware/authMiddleware');
 const jwt = require('jsonwebtoken'); // Import JWT library
+const jwtSecretKey = require('../util/config').secretkey;
 
 const authenticationController = {
     create: (req, res, next) => {
